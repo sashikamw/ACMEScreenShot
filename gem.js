@@ -1,8 +1,12 @@
 const axios = require('axios');
 //Your LambdaTest username
+console.log(process.env.username);
+console.log(process.env.accesstoken);
+
 const username = process.env.username;
 //Your LambdaTest accessToken
 const accessToken = process.env.accesstoken;
+
 axios.defaults.baseURL = 'https://api.lambdatest.com/screenshots/v1';
 axios.defaults.headers.common['Authorization'] = "Basic " + Buffer.from(username + ":" + accessToken).toString('base64');
 axios.defaults.headers.common['Content-Type'] = 'application/json';
@@ -111,7 +115,8 @@ async function startTest() {
     let testIDS = [];
     //Your URLS for which to take screenshots
     let gemBaseUrl = "https://integration.askgem.com";
-    let urls = ["/"]
+    let urls = ["/", "/services/", "/services/heating-cooling/", "/careers/", "/commercial/", "/promotional-offers/", 
+    "/payments-financing/", "/blog/", "/category/plumbing/", "/questions-about-bathroom-plumbing/", "/service-memberships/"]
     //Your OS and Browser configurations on which to take screenshots
     // Two seperate API calls simulated with smartscroll on and off, to avoid sticky header issue
     let osBrowserConfigWithSmartScroll = {
