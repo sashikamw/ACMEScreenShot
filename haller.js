@@ -168,7 +168,7 @@ async function startTest() {
         try {
 
             testPayloadWithSmartScroll = {
-                defer_time: 3,
+                defer_time: 5,
                 email: false,
                 layout: "portrait",
                 mac_res: "1024x768",
@@ -209,7 +209,7 @@ async function startTest() {
          try {
             //console.log("Without Smart Scroll");
             testPayloadWithOutSmartScroll = {
-                defer_time: 3,
+                defer_time: 5,
                 email: false,
                 layout: "portrait",
                 mac_res: "1024x768",
