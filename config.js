@@ -1,6 +1,5 @@
  //Configure all the screenshot variables here
  module.exports = { 
- variableName: "variablevalue",
  BrowserSectionWithSmartScroll: {"windows 10": {"chrome": ["79"],"firefox": ["71"],"edge": ["17"]},"macos mojave": {"safari": ["12"]}},
  BrowserSectionWithoutSmartScroll: {"windows 10": {"ie": ["11"]},"ios 12.0": {"devices": ["iphone xr"]},"ios 10.3": {"devices": ["iphone se"]},"android 9.0": {"devices": ["galaxy s9 plus"]}},
  urllist: ["https://integration.hallerent.com/", "https://integration.hallerent.com/services/", "https://integration.hallerent.com/services/heating-cooling/", "https://integration.hallerent.com/careers/", "https://integration.hallerent.com/commercial/", "https://integration.hallerent.com/promotional-offers/", 
