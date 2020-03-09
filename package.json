@@ -2,9 +2,9 @@
   "name": "multiurl-screenshots",
   "version": "1.0.0",
   "description": "Take screenshots on multiple urls using LambdaTest Screenshot APIs",
-  "main": "haller.js",
+  "main": "app.js",
   "scripts": {
-    "test": "node haller.js"
+    "test": "node app.js"
   },
   "author": "LambdaTest",
   "license": "ISC",
